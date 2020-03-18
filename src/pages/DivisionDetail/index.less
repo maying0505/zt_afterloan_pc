@@ -1,0 +1,60 @@
+.division-detail {
+  position: relative;
+
+  .back {
+    position: absolute;
+    right: 20px;
+    top: 0;
+    z-index: 2;
+  }
+
+  .my-modal {
+    position: fixed;
+    top: 0;
+    width: 290px;
+    height: 550px;
+    min-height: 550px;
+    max-height: 550px;
+    background-color: #F1F1F1;
+    border-radius: 5px;
+    z-index: 3;
+
+
+    margin-left: auto;
+    margin-right: auto;
+
+    .header {
+      border-top-left-radius: 5px;
+      border-top-right-radius: 5px;
+
+      .title {
+        display: inline-block;
+        color: #333333;
+        font-weight: bold;
+        font-size: 20px;
+        padding: 8px 10px;
+      }
+
+      .icon {
+        float: right;
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        text-align: center;
+        border-top-right-radius: 5px;
+
+        &:hover {
+          cursor: pointer;
+        }
+
+        &:active {
+          background-color: #e8e8e8;
+        }
+      }
+    }
+
+    .content {
+      padding: 10px;
+    }
+  }
+}

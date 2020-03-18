@@ -1,0 +1,91 @@
+.my-layout {
+
+  & .ant-menu-dark, .ant-menu-inline .ant-menu-sub {
+    background-color: #222632;
+  }
+
+  & .ant-layout-sider-trigger {
+    background-color: #222632;
+  }
+
+  & .sider {
+    background-color: #222632;
+    position: relative;
+    height: 100vh;
+  }
+
+  & .logo {
+    height: 56px;
+    font-size: 20px;
+    color: #e8e8e8;
+    margin: 25px 0;
+    text-align: center;
+
+    & img {
+      transition: all 0.3s;
+    }
+  }
+
+  & .menu-box {
+    overflow: hidden;
+    position: absolute;
+    top: 92px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    & > .menu-view {
+      overflow-y: scroll;
+      overflow-x: hidden;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      margin-right: -17px;
+      padding-bottom: 96px;
+
+      & .ant-menu-submenu > .ant-menu-submenu-title {
+      }
+    }
+  }
+
+
+  & .layout-button {
+    position: absolute;
+    bottom: 48px;
+    width: 100%;
+    height: 48px;
+    line-height: 48px;
+    text-align: center;
+    color: white;
+    background-color: #222632;
+
+    & span {
+      color: white;
+    }
+
+    &:hover {
+      cursor: pointer;
+    }
+
+    &:active {
+      background-color: #E0B788;
+    }
+  }
+
+  & .ant-layout-content > .outer-content {
+    overflow: hidden;
+
+    & .inner-content {
+      padding: 8px;
+      background-color: #ffffff;
+      max-height: calc(100vh - 16px);
+      overflow-y: scroll;
+
+      &::-webkit-scrollbar {
+        display: none;
+      }
+    }
+  }
+}
